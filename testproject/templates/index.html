@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+    <div class="m-5 mx-auto shadow-md ring-1 ring-slate-300 w-80 rounded-lg overflow-hidden">
+        <img class="" src="{% static 'media/pizza.jpeg' %}" alt="pizza magherita">
+        <div class="p-2">
+            <div class="font-bold text-lg text-gray-700 leading-snug">
+                <a href="#" class="hover:underline">Pizza magherita</a>
+            </div>
+            <p class="text-xs leading-tight tracking-wide my-2">
+                Invented in Naples in honor of the first queen of Italy, the Margherita pizza is the triumph of Italian cuisine in the world.
+            </p>
+            <div class="flex pt-2 border-t border-gray-300 text-sm text-gray-700 divide-x-2">
+                <div class="flex-1 text-center">
+                    <i class="far fa-clock"></i>
+                    <p>1h 15m</p>
+                </div>
+                <div class="flex-1 text-center">
+                    <i class="fas fa-utensils"></i>
+                    <p>4 servings</p>
+                </div>
+                <div class="flex-1 text-center">
+                    <i class="fas fa-signal"></i>
+                    <p>Easy</p>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock content %}

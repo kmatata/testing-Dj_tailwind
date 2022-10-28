@@ -1,0 +1,28 @@
+{% load static tailwind_tags %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    <title>Django Tailwind</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<script src="https://kit.fontawesome.com/0abd7bc727.js" crossorigin="anonymous"></script>
+		<style>
+			.box {
+				color:white;
+				background-color: green;
+				min-height: 150px;
+				padding-top: 10%;
+				padding-left: 15%;
+				font-size: 1.5rem;
+				font-weight: 700;
+			}
+		</style>
+		{% tailwind_css %}
+	</head>
+
+	<body class="h-screen bg-yellow-50">
+		{% block content %}
+		{% endblock content %}		
+	</body>
+</html>
